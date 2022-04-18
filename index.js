@@ -1,5 +1,4 @@
-import hello from './hello.js'
-const div = document.createElement('div')
-div.innerHTML = hello()
+import './hello.js'
+import './other';
 
-document.body.appendChild(div)
+// console.log(module, module.hot);
