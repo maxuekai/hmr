@@ -4,11 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	mode: 'development',
-	entry: [
-		'./index.js',
-		// 'webpack/hot/dev-server.js',
-		// 'webpack-dev-server/client/index.js?hot=true',
-	],
+	entry: './src/index.js',
 	output: {
 		filename: '[name].bundle.js',
 		path: path.resolve(__dirname, 'dist'),
@@ -23,9 +19,7 @@ module.exports = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: 'Development',
-			template: 'dist/index.html'
+			template: './dist/index.html'
 		}),
-		// Plugin for hot module replacement
-		// new webpack.HotModuleReplacementPlugin(),
 	],
 }

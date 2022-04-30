@@ -1,10 +1,10 @@
 {
-  "name": "ds-demo",
+  "name": "hmr-demo-basic",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "serve": "npx webpack serve"
+    "serve": "webpack serve"
   },
   "keywords": [],
   "author": "",
